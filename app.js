@@ -41,9 +41,15 @@ app.get("/compose", function(req, res) {
 
 
 app.post("/compose", function(req, res) {
-  let newPost = req.body.newArticle;
+  // let newPost = req.body.newArticle;
 
-  console.log(newPost);
+  // console.log(newPost);
+ const newArticle = {
+  title: req.body.postTitle,
+  body: req.body.postBody
+ };
+ console.log(newArticle);
+
 });
 
 
